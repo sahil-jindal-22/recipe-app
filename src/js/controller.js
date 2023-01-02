@@ -41,7 +41,6 @@ const controlSearchResults = async function () {
     await Model.loadSearchResults(query);
 
     // 3. Render results
-    // ResultsView.render(Model.state.search.results);
     ResultsView.render(Model.getSearchResultsPage());
 
     // 4. Render initial pagination
@@ -141,12 +140,3 @@ const init = function () {
 };
 
 init();
-
-// if (module.hot) module.hot.accept();
-
-// window.addEventListener('load', function () {
-//   document.querySelector('.search__field').value = 'pizza';
-//   document.querySelector('.search__btn').click();
-// });
-
-console.log('NEW FEATURE');

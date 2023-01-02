@@ -39,7 +39,6 @@ export const loadRecipe = async function (id) {
       state.recipe.bookmarked = false;
     }
   } catch (err) {
-    console.error(`${err} 💥💥💥💥`);
     throw err;
   }
 };
@@ -72,9 +71,6 @@ export const getSearchResultsPage = function (page = state.search.page) {
 
   const start = (page - 1) * state.search.resultsPerPage;
   const end = page * state.search.resultsPerPage;
-
-  // console.log(`CurPage = ${page}`);
-  // console.log(state.search.results.slice(start, end));
 
   return state.search.results.slice(start, end);
 };
