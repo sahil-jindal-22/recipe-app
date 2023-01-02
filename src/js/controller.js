@@ -148,3 +148,5 @@ init();
 //   document.querySelector('.search__field').value = 'pizza';
 //   document.querySelector('.search__btn').click();
 // });
+
+console.log('NEW FEATURE');
